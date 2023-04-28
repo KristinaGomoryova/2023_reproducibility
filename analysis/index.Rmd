@@ -11,3 +11,4 @@ editor_options:
 Welcome to my research website.
 
 - [Penguins](penguins.html)
+- [Penguins](penguins.html)
