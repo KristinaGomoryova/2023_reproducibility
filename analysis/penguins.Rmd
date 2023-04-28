@@ -1,0 +1,32 @@
+---
+title: "Penguins"
+output: html_document
+date: "2023-04-28"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Penguin analysis
+
+```{r libraries}
+library(palmerpenguins)
+library(dplyr)
+library(ggplot2)
+```
+
+# Do stuff
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+penguins %>% 
+  count(species)
+
+penguins %>%
+  ggplot(aes(x = bill_length_mm , y= bill_depth_mm, col = species)) +
+  geom_point()
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
